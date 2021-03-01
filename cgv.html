@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="robots" content="noindex" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Conditions Générales de Vente</title>
+	<style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ab9131d9-ea6f-430e-8932-bfd43e93f3b9" class="page sans"><header><h1 class="page-title">Conditions Générales de Vente</h1></header><div class="page-body"><p id="844f30b9-fed5-4f6d-ac6d-4458d699a5b1" class="">
+</p><p id="5c3fe030-b71d-4803-b921-02384cead214" class="">Les présentes Conditions Générales de Vente ont pour objet de régir les termes et conditions ainsi que les modalités selon lesquelles ASK FOR DEV <em>(ci-après désigné le PRESTATAIRE)</em> fournit ses services à ses clients. </p><p id="9bbaeaf3-71de-43cb-8017-d0c29c1a3c6f" class="">Les présentes Conditions Générales de Vente prévalent sur les informations commerciales affichées sur le site <a href="http://www.askfordev.fr/">www.askfordev.fr</a>, celles-ci pouvant être amenées à être modifiées à tout moment et sans préavis, ou sur toutes autres conditions figurant dans tout autre document.</p><h1 id="6a679628-2633-4ec8-8de2-0d38850b7a09" class=""><mark class="highlight-teal"><strong>ARTICLE 1 – DÉFINITIONS</strong></mark></h1><p id="c26bf4b9-c85a-4251-bc7c-304f543ecf95" class="">« PRESTATAIRE » désigne ASK FOR DEV, micro-entrepreneur, SIRET 520 792 243 00021,
+dont le siège social est situé Le Bois clair, 71600 Paray-le-monial</p><p id="d4b9cfec-78c4-46a5-8578-f89631c28b26" class="">« CLIENT » désigne toute personne physique majeure ou personne morale, sollicitant les services du PRESTATAIRE. La personne ou l’entreprise signataire des présentes Conditions Générales de Vente (<em>signature accompagnée de la mention BON POUR ACCORD sur le devis)</em> se porte garante du paiement de la facture même si celle-ci doit être établie au nom d’un tiers.</p><h1 id="834f6fa7-417d-4a00-b121-d51d985312ea" class="block-color-teal">ARTICLE 2 – OBJET ET CHAMP D’APPLICATION</h1><p id="9e24f6aa-27e8-4210-9723-4377f4c0e912" class="">Le PRESTATAIRE propose des services de création, réalisation, refonte de site internet, interventions informatiques <mark class="highlight-yellow_background">sur différentes technologies dont</mark> le CMS WordPress <em>(installation de WordPress, configuration et optimisation de site) </em>et maintenance de site internet.</p><p id="cec37436-0b7d-4e08-976c-021d62ac8d0c" class="">Le CLIENT est informé sur le devis des Conditions Générales de Vente et peut les consulter à tout moment sur le site internet du PRESTATAIRE à l’adresse <a href="http://www.askfordev.fr/">www.askfordev.fr</a> . </p><p id="8fb97d8c-3140-4a71-be6e-64ddb423daf1" class="">En conséquence, toute commande passée par le CLIENT pour le compte du PRESTATAIRE emporte acceptation et sans réserve des présentes Conditions Générales de Vente.</p><h1 id="f566ec0d-fb9a-438d-9578-02fbdbcc49c8" class=""><mark class="highlight-teal">ARTICLE 3 – NOM DE DOMAINE ET HÉBERGEMENT</mark></h1><p id="ac6efbba-9e3f-4460-aff1-2255e9f4ab9f" class="">Les prestations de création ou de refonte de site internet s’entendent hors achat de nom de domaine et hors hébergement, ceux-ci étant à la charge du CLIENT. </p><p id="74af1135-c789-430d-9f0a-5303e01e1202" class="">Le PRESTATAIRE peut proposer au CLIENT de contracter chez son partenaire, mais le CLIENT est libre du choix de son fournisseur.</p><h1 id="5c85a12e-8a8d-4560-ba7d-4d527c4672ef" class=""><mark class="highlight-teal">ARTICLE 4 – DROIT DE PUBLICITÉ</mark></h1><h2 id="b78aa4a9-a696-406a-8113-e90d7643d5d7" class=""><strong>4.1. Références</strong></h2><p id="a2cc3aa4-3aa3-41e7-9dd7-0282c2760670" class="">Le CLIENT autorise le PRESTATAIRE à citer son nom et sa dénomination sociale ainsi que son URL, les copies d’écran de ses pages Web, à titre de références pour la promotion commerciale du PRESTATAIRE.</p><p id="98a9c2eb-ada3-4be7-8593-ea0cfd217a59" class="">Le CLIENT est informé qu’un lien vers son site sera réalisé depuis le site du PRESTATAIRE. Cela aura pour effet d’augmenter sa visibilité dans les moteurs de recherches. Le CLIENT peut s’opposer à cette mesure par simple courrier adressé au PRESTATAIRE.</p><h2 id="3857c1ff-1611-4719-a89c-670f0c53680c" class=""><strong>4.2. Mention bas de page</strong></h2><p id="6936e6bc-3543-47ef-9f93-8cf36dd07277" class="">Le CLIENT s’engage à faire figurer en bas de chaque page de son site internet la mention discrète « Site réalisé par Ask for dev » éventuellement accompagné d’un lien pointant vers <a href="http://www.askfordev.fr/">www.askfordev.fr</a> et d’un logo.</p><h1 id="549c6674-3b3a-4877-8c18-36b722a56ebe" class=""><mark class="highlight-teal">ARTICLE 5 – CAHIER DES CHARGES ET DEVIS</mark></h1><h2 id="26b02696-d996-425c-8ae8-644f0de175ca" class=""><strong>5.1. Cahier des charges</strong></h2><p id="77e1bc72-9fc2-4581-9496-e3cda1c31655" class="">Il est conseillé au CLIENT de remettre au PRESTATAIRE un cahier des charges du site internet qu’il souhaite faire réaliser et le compléter de la façon la plus détaillée possible. Une fois approuvé par les deux parties, ce cahier des charges ne subira plus de modifications et servira de base à l’établissement du devis par le PRESTATAIRE.</p><h2 id="fa757999-5fd6-4bdf-be51-dcfd5c260f9e" class=""><strong>5.2. Devis « Réalisation ou refonte de site internet »</strong></h2><p id="ed0bc2c3-a60b-4b3e-becf-832151905088" class="">Le devis est effectué gratuitement par le PRESTATAIRE, soit à partir du cahier des charges remis par le CLIENT, soit à partir des échanges entre le CLIENT et le PRESTATAIRE, et ce sans engagement pour le CLIENT, sauf cas particulier mentionné par écrit sous forme de courriel au CLIENT, notamment lorsque le devis entraîne un travail de recherche.</p><p id="3d776726-b6e3-4915-a24f-6909c9ebda33" class="">Le devis est envoyé par courriel au CLIENT au format PDF. L’acceptation du devis implique une bonne compréhension de ce document par le CLIENT.</p><p id="6c65c4d0-d25b-4293-b81d-3fc034ac5b25" class="">Le devis est <strong>valable un (1) mois</strong>  à compter de sa date d’émission et n’engage pas le CLIENT tant que celui-ci n’a pas confirmé avoir accepté l’offre proposée. Passé ce délai, le PRESTATAIRE est autorisé à modifier le prix. Les prix convenus verbalement ou publiés sur le site internet <a href="http://www.askfordev.fr/">www.askfordev.fr</a> n’engagent le PRESTATAIRE que s’ils ont été confirmés par une offre écrite par PDF ou par courriel.</p><p id="6ff2ebe5-c4f2-4465-bf30-c70bd67c8e12" class="">En cas d’acceptation,  le CLIENT devra imprimer le devis PDF, le signer, apposer la date et la mention manuscrite « BON POUR ACCORD ». Tout devis signé par le CLIENT vaut Bon de commande. Le devis signé doit être envoyé par courrier postal à l’adresse du PRESTATAIRE avec le règlement de l’acompte, par chèque ou virement, d’un montant de 50 % de la somme totale, sauf autres conditions mentionnées dans le devis.</p><p id="3ea36303-14c4-4037-a264-28542d986819" class="">Le devis accepté et signé par le CLIENT engage les deux parties.</p><p id="7c608707-cd7c-4563-a708-c503faa0ff65" class="">Le PRESTATAIRE se réserve le droit de refuser une commande avec un client pour lequel il existerait un litige concernant le règlement d’une commande antérieure.</p><h1 id="4566fec4-f1b8-4c04-b463-1ac4a2874882" class=""><mark class="highlight-teal">ARTICLE 6 – ENGAGEMENTS DU CLIENT</mark></h1><h2 id="0434ca7c-cee3-432d-aeb6-dbd88e73bf68" class=""><strong>6.1. Fourniture des codes d’accès</strong></h2><p id="a02808c6-b88a-4252-b944-fb907f594376" class="">Le CLIENT s’engage à fournir au PRESTATAIRE l’ensemble des informations requises pour assurer l’exécution des services prévus dans le présent contrat, et notamment les codes d’accès à son serveur d’hébergement afin que le PRESTATAIRE puisse procéder à l’installation du site internet et intervenir pour la maintenance de ce site.</p><h2 id="83235b23-eb64-4d4b-8052-ebeab98dcb52" class=""><strong>6.2. Fourniture des contenus</strong></h2><p id="6608955d-4351-4ee0-8d63-25f693c3bdc2" class="">Le CLIENT s’engage à fournir tous les éléments de textes, images, vidéos et sons nécessaires à la réalisation du contrat et à collaborer avec le PRESTATAIRE en mettant à sa disposition tout document ou information qui pourrait être demandé par le PRESTATAIRE.</p><p id="a9f3fb6b-82aa-46c0-ad51-dc7f5c9da700" class="">Tous les contenus de textes et médias sont à fournir par le CLIENT avant le commencement des travaux et dans leur intégralité.</p><h2 id="1311bb2c-b1a6-4b30-bd81-f85866de396d" class=""><strong>6.3. Délai de fourniture des contenus</strong></h2><p id="569ef857-0a85-4604-ae1a-0f9082d62139" class="">Le CLIENT s’engage à fournir au PRESTATAIRE, <strong>sous un délai de trois (3) mois après la date de l’acceptation de l’offre</strong>, tous les éléments nécessaires à la réalisation du devis accepté. </p><p id="dbc03e51-aa89-4383-bc6a-88c72b02c90d" class="">Passé ce délai, la facture finale sera majorée d’un supplément de 5% de son montant total par tranches de trois (3) mois écoulés. </p><p id="08da6d9b-0eb7-42b1-ac7b-92828ac652dc" class=""><em>Par exemple, si le CLIENT fournit ses éléments six (6) mois écoulés après la date de la signature du devis, la facture définitive sera majorée de 10%.</em></p><h2 id="6cda5bb6-572b-4b85-8491-45ac25b0c9aa" class=""><strong>6.4. Propriété intellectuelle</strong></h2><p id="d3b417d9-4a24-4cab-8b51-849085bb82c9" class="">Le CLIENT doit impérativement s’assurer qu’il est propriétaire de tous les droits de propriété intellectuelle afférents à ces éléments ainsi qu’aux autres documents de toute nature présents sur son site internet et que les ressources fournies ne sont pas susceptibles de porter atteinte aux droits des tiers.</p><p id="8c747038-5995-459a-aea9-3de08c1bef31" class="">Le CLIENT est informé que les publications constituent notamment des œuvres de l’esprit protégées par les droits d’auteurs au sens de l’article L 112-2 1er et 2ème du Code de la Propriété Intellectuelle. Le CLIENT s’engage en conséquence à faire figurer sur les pages de son site internet l’identité et l’adresse du propriétaire ou de l’auteur des textes et/ou images reprises et à effectuer toutes les demandes nécessaires, conformément à la loi française en vigueur.</p><p id="54009983-ed90-47c7-b185-b2cefa798d8b" class="">Le CLIENT s’engage à ne fournir au PRESTATAIRE que des documents réels et représentatifs de son entreprise et non des ressources en provenance de la concurrence.</p><h2 id="8bba5c91-2a4f-45ca-8d8c-39ce6b25868d" class=""><strong>6.5. Collaboration active</strong></h2><p id="1ec325e9-6846-4295-bbde-227170010320" class="">Le CLIENT s’engage à collaborer activement avec le PRESTATAIRE en lui fournissant dans les délais utiles les informations et documents nécessaires à la bonne exécution du contrat. Le PRESTATAIRE ne pourra être tenu pour responsable en cas de retard dans l’exécution des travaux dû au non respect de cet engagement par le CLIENT.</p><h2 id="7ed475e2-03c4-4a57-b957-5f99d216b799" class=""><strong>6.6. Sauvegarde des contenus</strong></h2><p id="e6fb6673-ad06-4b5e-8b3a-91ebe769a575" class="">Le CLIENT s’engage à conserver l’intégralité des originaux de toutes les ressources fournies au PRESTATAIRE qui ne pourra être tenu pour responsable en cas de perte lors de modification du site internet par le PRESTATAIRE ou par toute autre personne.</p><h2 id="8b0555e8-edd3-4778-bef8-83d94a666d72" class=""><strong>6.7. Informatique et Libertés</strong></h2><p id="a0f8b5ba-1bdc-4b84-affb-aa761e2928e9" class="">Le CLIENT s’engage à respecter les dispositions relatives aux mentions légales obligatoires à insérer sur son site internet en vertu de la loi du 30 septembre 1986 modifiée et celles relatives à l’informatique, aux fichiers et aux libertés, en particulier celles relatives aux déclarations des traitements automatisés d’informations nominatives auprès de la Commission Nationale de l’Informatique et des Libertés (C.N.I.L.).</p><h2 id="2032814e-ca2b-41be-bec0-9e701230a490" class=""><strong>6.8. Paiement</strong></h2><p id="c5d82f0e-c9f4-4f50-9584-2c458818a97c" class="">Le CLIENT s’engage à régler les sommes dues dans les délais indiqués à la commande.</p><h1 id="cdcd5224-c79d-4907-b846-e0cfdc537aa7" class=""><mark class="highlight-teal">ARTICLE 7 – ENGAGEMENTS DU PRESTATAIRE</mark></h1><p id="a1955062-478f-435d-8ff5-dab5a686e019" class="">Dans le cadre d’une obligation de moyen dans l’exécution du contrat, le PRESTATAIRE s’engage à :</p><ul id="04566ef5-003d-4bee-84a9-213a7efe535f" class="bulleted-list"><li>concevoir et mettre en ligne le site internet, conformément au devis accepté par le CLIENT</li></ul><ul id="3ea281a2-f04e-4f66-a147-6f82d791c076" class="bulleted-list"><li>apporter tout le soin nécessaire à la mise en œuvre d’un service de qualité </li></ul><ul id="0d0dc0c6-1042-49c4-b8a3-5be102ef6bef" class="bulleted-list"><li>informer régulièrement le CLIENT sur l’avancée de la réalisation du contrat </li></ul><ul id="da141689-8e66-4b09-82be-ef67a824b440" class="bulleted-list"><li>préserver la confidentialité de toutes les informations et documents qu’il pourrait détenir du fait de l’exécution du présent contrat </li></ul><ul id="62641ead-9057-437c-9843-d74018331e93" class="bulleted-list"><li>assurer la confidentialité des informations hébergées et à ne les communiquer à aucun tiers, même si le présent contrat arrive à son terme ou se trouve résilié</li></ul><h1 id="edb70cf6-d371-4871-a6ba-5d61c4e7c4a9" class=""><mark class="highlight-teal">ARTICLE 8 – COMMANDE</mark></h1><h2 id="85a2bd5d-1db4-4061-a16c-6f9311273fde" class=""><strong>8.1. Conclusion du contrat</strong></h2><p id="2db15eb6-174a-446f-a1a5-a6c2261f13b9" class="">Le CLIENT reconnaît avoir reçu du PRESTATAIRE toutes les informations et conseils qui lui étaient nécessaires pour souscrire le contrat. Ainsi, les choix effectués par le CLIENT lors de sa commande ou ultérieurement demeurent sous son entière responsabilité.</p><p id="da258e79-3ac5-49de-a30b-52fc57359410" class="">Le contrat est considéré comme conclu à réception du devis signé par le CLIENT avec la mention manuscrite « BON POUR ACCORD » et de l’acompte. </p><p id="dee0de48-a634-41f9-bab2-9ccc2d042603" class="">Le début des travaux ne sera enclenché qu’après encaissement de l’acompte.</p><h2 id="6b547b5a-7cf1-44ae-9f74-36232a85b393" class="block-color-yellow_background"><strong>8.2. Choix du thème</strong><em><strong> (aspect graphique du site)</strong></em></h2><p id="8a69611c-f10e-4307-a253-94133d3a227a" class="block-color-yellow_background">Une fois la commande passée par le CLIENT, le PRESTATAIRE lui propose une sélection de thèmes en adéquation avec le cahier des charges ou selon le projet détaillé par le CLIENT lors des échanges avec le PRESTATAIRE. </p><p id="67996c1a-570d-44dd-9837-9cc2ba5490d4" class="block-color-yellow_background">Le choix du thème est réalisé en concertation avec le CLIENT. Tout changement ultérieur pourra faire l’objet d’une estimation du temps supplémentaire destiné à la recherche et aux modifications du contenu déjà intégré. </p><p id="c48f90f7-a218-4a6a-bd56-e77a973cdd0c" class="block-color-yellow_background">Le positionnement des différents éléments est soumis aux caractéristiques du thème choisi par le CLIENT qui devra s’assurer que celui-ci correspond à ses besoins présents et futurs.</p><h2 id="5cbd93df-21d3-4de9-848c-ae05449bd3b9" class=""><strong>8.3. Installation sur le serveur d’hébergement</strong></h2><p id="74350d18-ff92-4320-94cf-99f6fb45bc0d" class="">Le PRESTATAIRE installe la base de données sur l’hébergement du CLIENT ou, en cas de refonte de site, sur un serveur temporaire durant le temps de réalisation du site internet puis sur le serveur du CLIENT.</p><h2 id="e9625bb2-074d-47ed-b534-714b12d42ea1" class=""><strong>8.4. Intégration des contenus</strong></h2><p id="ad58d1f0-cf3d-4c83-b2ae-baed92750ec5" class="">Le PRESTATAIRE procède à l&#x27;installation <mark class="highlight-yellow_background">ou la création</mark> du thème, à la mise en place de l’arborescence et à l’intégration des textes, images, vidéos, etc…  fournis par le CLIENT.</p><p id="e80e04e8-0158-40b6-84d1-94996f0387ac" class="">8.4.1. Le CLIENT est tenu de relire très attentivement ses textes <strong>avant de les transmettre</strong> au PRESTATAIRE <em>(orthographe, majuscules, singulier/pluriel, tournures de phrases…)</em>. </p><p id="8ac42e94-2e62-4378-9794-563efec7fc88" class="">A la livraison du site internet, si les modifications demandées par le CLIENT sur les textes s’avéraient importantes, le PRESTATAIRE se réserve le droit de facturer un supplément au prorata du temps supplémentaire passé, après en avoir averti le CLIENT par courriel.</p><p id="ae05af7f-0a23-46ec-a3c2-02f4fbce164c" class="">8.4.2. Dans le cas où des modifications, retouches et autres prestations prévues au devis devaient engendrer un temps de réalisation excessif par rapport au délai normalement nécessaire, comme par exemple l’exploitation des fichiers et documents fournis par le CLIENT, une majoration au tarif horaire sera appliquée au prorata du temps passé.</p><h2 id="5389bba9-1688-443a-81c9-e7e2a11c4978" class=""><strong>8.5. Extensions et plugins</strong></h2><p id="bffdac17-c79c-4dc5-a749-85a1d8c20a6c" class="">Le PRESTATAIRE intègre les modules, extensions et plugins nécessaires et en conformité avec le cahier des charges <em>(formulaires, préparation au référencement, traduction, etc…)</em>. </p><p id="7fe049f8-c279-4060-be20-5bee43fcc988" class="">Certains plugins sous licence payante peuvent être utilisés et sont inclus dans le devis. Les versions des plugins, composants et modules installés sont récentes.</p><h2 id="abd7afb8-a1c6-4ad6-ac15-e4e6a1aa0aea" class=""><strong>8.6. Livraison et achèvement des travaux</strong></h2><p id="f18f3df4-106a-4639-8b41-51b73e8d6f9a" class="">Le PRESTATAIRE informera le CLIENT par courriel de la mise en ligne du site internet. Le courriel de mise en ligne signifiera l’achèvement des travaux.</p><p id="d6fb3399-2369-4fef-93e4-765a9598c26e" class="">Durant quinze (15) jours suivant la mise en ligne du site internet, le CLIENT pourra demander des modifications mineures du contenu du site, c’est-à-dire la légère modification des textes <em>(fautes d’orthographe, changement de mots ou modification de phrases, etc…)</em>. </p><p id="1ea2280b-0ad3-4221-820d-cb1af46ce303" class="">Les changements plus importants de type ajout de paragraphes entiers feront l’objet d’une nouvelle facturation.</p><h1 id="46777954-343a-4150-8123-c995068fd84a" class=""><mark class="highlight-teal">ARTICLE 9 – DÉLAI DE RÉTRACTATION</mark></h1><h2 id="a69311e0-dc33-4f1f-9f11-9022272d715b" class=""><strong>9.1. Clients professionnels</strong></h2><p id="bced3e36-2400-47e5-a341-839cf9ae6d8e" class="">Le délai de rétractation n’est pas de rigueur entre professionnels.</p><h2 id="9a775af0-acbf-46f4-8c62-831f252b4c1e" class=""><strong>9.2. Clients particuliers</strong></h2><p id="2283bc8a-595b-447a-a014-7a39cefbc3eb" class="">Le délai de rétractation est applicable pour les clients dits « particuliers », personnes physiques ne disposant pas de numéro de SIREN/SIRET et faisant appel au PRESTATAIRE à titre personnel.</p><p id="530dfaed-a7b0-4f4e-949c-ae8c5f6d86da" class="">Dans ce cas, le CLIENT dispose d’un délai de rétractation de quatorze (14) jours ouvrables à partir de l’acceptation de l’offre. Le jour, qui sert de point de départ, ne compte pas. Lorsque le délai s’achève un samedi, un dimanche ou un jour férié ou chômé, il est prolongé jusqu’au premier jour ouvrable suivant.</p><p id="76e59300-c75b-4961-809f-89408240181b" class="">Ce droit de rétractation s’effectue par courrier adressé au PRESTATAIRE en recommandé avec accusé de réception et donne droit pour le CLIENT au remboursement des sommes déjà versées par lui dans un délai de quatorze (14) jours à compter de la réception de l’avis.</p><p id="6087a8d8-71e6-4875-9541-cc01a70f2a7c" class="">Au-delà de ce délai de rétractation, la commande ne peut plus être annulée et la somme est due de plein droit, productive d’intérêts au taux légal en vigueur.</p><h1 id="41588e86-0402-4c0d-8c43-45b2d231b1c1" class="block-color-teal">ARTICLE 10 – MODIFICATION OU ANNULATION DE COMMANDE</h1><p id="1c1b7b4c-443c-4377-89b1-d38981486b2b" class="">Toute modification ou annulation de prestation par le CLIENT donnera lieu à un courriel de confirmation de la part du PRESTATAIRE.</p><h2 id="08d27f2f-3c02-42e5-8152-6ef3a474cd8e" class=""><strong>10.1. Modification</strong></h2><p id="14d49143-982d-4a6d-b103-7bd91eba62a9" class="">La prestation comprend uniquement les services spécifiés dans le devis et approuvés par le CLIENT. </p><p id="2cc7ad7d-c51f-4170-9a2c-9a496702a7cc" class="">Aucun devis ne peut être modifié sans l’accord express de chacune des deux parties. Toute modification ou ajout ultérieur apporté au devis initial fera l’objet d’un nouveau devis et/ou d’une nouvelle facturation.</p><p id="c6aa55bd-c98a-4204-b889-c5d55777555d" class="">Toute modification de devis demandée par le CLIENT et approuvée par le PRESTATAIRE pourra donner lieu à des délais de livraison supplémentaires.</p><h2 id="4155ff9a-9780-4d32-a72f-fe9c0c1d6454" class=""><strong>10.2. Annulation </strong><em><strong>(hors service de maintenance)</strong></em></h2><p id="f06305dc-e909-40d9-a4d5-d804911d004c" class="">En cas d’annulation des services du PRESTATAIRE par le CLIENT après la signature et la réception du devis/Bon de commande et avant le démarrage des travaux, un pourcentage d’un montant de 30 % du montant total de la facture sera demandé à titre de dommages et intérêts et de compensation pour services rendus.</p><p id="123abcc3-7d3d-4a27-98c6-59a80481d2a4" class="">En cas d’annulation des services du PRESTATAIRE par le CLIENT pendant la réalisation des travaux, le PRESTATAIRE se réserve le droit de retenir une somme au prorata des travaux effectués.</p><p id="e027613f-ee6b-418c-aeae-9c572499dbc4" class="">Si l’annulation d’une commande ou rupture d’un contrat sont du fait du PRESTATAIRE et ne résultent pas d’un cas de force majeure <em>(coupure du réseau internet, piratage du système du PRESTATAIRE, invalidité, maladie grave,…) </em>et si les raisons de l’annulation n’engagent pas le CLIENT <em>(comportement illicite, défaut de paiement,…)</em>, le PRESTATAIRE s’engage à reverser au CLIENT l’intégralité des sommes perçues dans un délai de quatorze (14) jours à compter de la déclaration d’annulation ou de rupture.</p><h1 id="c743ba64-3b0c-4baa-8bb7-a6616ef31e63" class=""><mark class="highlight-teal">ARTICLE 11 – DÉLAIS DE LIVRAISON</mark></h1><h2 id="c93ee4fb-d137-46fa-9672-c0d70e0f7c56" class=""><strong>11.1. Planning</strong></h2><p id="be1de4db-d5d5-4dae-b8c0-249deee48913" class="">La durée de réalisation de la prestation sera évaluée lors de l’étude préalable, avec si possible un planning convenu en commun accord entre les parties lors de la phase d’élaboration du cahier des charges.</p><p id="b8d814bd-a2d4-45a9-8b82-c330d7bdac35" class="">Toute modification du fait du CLIENT apportée postérieurement à la signature du devis et ayant pour conséquence un surcroît des charges et un allongement du temps prévu initialement fera l’objet d’une réévaluation des délais de livraison.</p><p id="56b8f970-8f49-4908-985c-9af99f8b6cd4" class="">Les délais de livraison indiqués sur le site internet <a href="http://www.askfordev.fr/">www.askfordev.fr</a> ne sont donnés qu’à titre indicatif et sur la base de l’expérience. Le PRESTATAIRE s’engage à respecter au mieux le délai annoncé et à informer régulièrement le CLIENT de l’avancée des travaux.</p><h2 id="154d3210-d197-46ef-92f0-ad04249b1ac2" class=""><strong>11.2. Retard de livraison</strong></h2><p id="91f61971-2346-44cd-8b3d-f8ef052d80f2" class="">Le délai de livraison ne dépend pas uniquement du PRESTATAIRE mais du CLIENT à qui il appartient de fournir les éléments nécessaires à la réalisation des travaux <em>(documents, codes d’accès au serveur d’hébergement, etc…)</em>. Le PRESTATAIRE décline toute responsabilité en cas de retard occasionné par le CLIENT par suite de transmission insuffisante ou tardive de ces éléments.</p><p id="08c9428f-804b-47b9-a7ff-90efe121a98d" class="">Le PRESTATAIRE se réserve le droit de suspendre toute commande dans l’attente des éléments du CLIENT devant figurer dans le cadre de celle-ci, sans préjudice ni contrepartie financière et sans que cela ne constitue motif de résiliation de la commande.</p><p id="43ada97d-0c87-4ac6-a4be-3fc3db0b3d60" class="">Dans le cas où le CLIENT mettrait un temps anormalement long à fournir les éléments nécessaires à la bonne exécution du contrat, le PRESTATAIRE se réserve le droit d’éditer une facture intermédiaire pour les travaux déjà réalisés.</p><p id="6d97e4d1-9095-45cd-af08-a162178484f1" class="">Les retards de livraison ne peuvent justifier l’annulation de la commande par le CLIENT, ni donner lieu au paiement de dommages et intérêts, indemnités ou pénalités.</p><h2 id="c3c37bc6-800b-47d9-a41f-73d08a401998" class=""><strong>11.3. Devis de « mise à jour »</strong></h2><p id="e365e89e-954c-4257-bc16-699a4e57e4f9" class="">Dans le cadre d’un devis de mise à jour demandé par le CLIENT, comme l’ajout de textes, de pages ou d’articles, le PRESTATAIRE interviendra dans un délai de cinq (5) jours ouvrés après la réception des éléments, sauf en cas de fermeture exceptionnelle signalée au préalable par courriel au CLIENT. </p><p id="72df6f7f-6a3e-4b04-995d-4dc58b782fa8" class="">Toute mise à jour est à régler avant le commencement des travaux, avec édition de la facture acquittée à l’achèvement des travaux.</p><h1 id="2168e0c7-46c5-4b1d-876d-93fccd4257b1" class=""><mark class="highlight-teal">ARTICLE 12 – GARANTIE</mark></h1><p id="39ac77c1-1d5b-4b37-87e7-78fb56bc6361" class="">La garantie ne porte que sur les prestations décrites dans le contrat/devis signé et accepté par le CLIENT.</p><h2 id="0d6a1aa1-58a8-406c-9d6f-25abe51305ce" class=""><strong>12.1. Vérification de la commande</strong></h2><p id="2091850b-ac0e-4568-8231-37da4e868d71" class="">Le CLIENT doit vérifier le bon fonctionnement de son site internet dès la mise en ligne officielle et transmettre au PRESTATAIRE les dysfonctionnements constatés.</p><p id="85591f4a-3433-4d4d-8246-0fc39f62d7c3" class="">Le PRESTATAIRE s’engage à remédier à tout problème de fonctionnement résultant d’un défaut de conception ou d’exécution de ses prestations.</p><p id="6939c268-6c3b-4b71-ac6c-cd576d5ec507" class="">Toutefois, l’obligation de garantie du PRESTATAIRE est exclue dans les cas constatés de dysfonctionnements suivants :</p><ul id="13043e79-f297-421c-aa6d-499a9041f4e0" class="bulleted-list"><li>dus à une mauvaise utilisation du CLIENT ;</li></ul><ul id="424c7ed6-73ce-4d6a-8a05-35339838dd90" class="bulleted-list"><li>suite à une intervention du CLIENT ou d’un tiers autre que le PRESTATAIRE ;</li></ul><ul id="e577778f-5be6-4914-ae53-3bb1022f23a6" class="bulleted-list"><li>correspondants à une clause de non responsabilité des présentes Conditions de Vente ;</li></ul><ul id="a8607126-5f7b-406b-b95b-9e8522029e64" class="bulleted-list"><li>suite à une négligence, à un défaut de gestion ou de maintenance du CLIENT.</li></ul><h2 id="69e989d8-7647-4eb3-8f6c-a6c4b4a64041" class=""><strong>12.2. Délai de garantie</strong></h2><p id="ffe94854-58ec-4497-8223-44d6c9f537c1" class="">Le CLIENT dispose de quinze (15) jours à compter de la mise en ligne officielle de son site internet, et/ou de la livraison d’une prestation annexe, pour faire jouer la présente garantie en cas de dysfonctionnement constaté.</p><h1 id="55190bb8-6eac-40e7-978a-0d3d0292d3e1" class=""><mark class="highlight-teal">ARTICLE 13 – CONTRAT DE MAINTENANCE</mark></h1><h2 id="e37c4786-19ce-4e4e-ae95-1429cf8749ca" class=""><strong>13.1. Champ d’application</strong></h2><p id="4f7e08e2-0b98-4417-8ceb-a0c6f70d19cb" class="">Le CLIENT reconnaît avoir vérifié l’adéquation du service à ses besoins et avoir reçu du PRESTATAIRE toutes les informations et conseils qui lui étaient nécessaires pour souscrire au présent engagement de maintenance de son site internet en connaissance de cause.</p><p id="7a41a112-b655-4988-876d-037fdd908aed" class="">La maintenance n’assume que les mises à jour des produits installés et ne concerne que le site internet dont les noms de domaine sont précisés dans le contrat.</p><p id="51c78204-7c9e-4196-82bd-787b8395d233" class="">La maintenance comprend :</p><ul id="23aea783-fb23-4974-b57c-6ede132dbf1b" class="bulleted-list"><li>la mise à jour régulière du CMS, du thème utilisé ainsi que des extensions à leur dernière version ;</li></ul><ul id="e18655d1-d8e1-4bb8-bf25-96878fb1a5cc" class="bulleted-list"><li>l’optimisation basique de la base de données ;</li></ul><ul id="eda16984-c10a-42a8-84b4-5af98a9580de" class="bulleted-list"><li><mark class="highlight-yellow_background">la sauvegarde des pages et de la base de données ;</mark></li></ul><ul id="b50e0b9b-7773-4dc2-a241-c8d4e645c176" class="bulleted-list"><li>les mesures préventives qui sembleront nécessaires au PRESTATAIRE afin de garantir la stabilité, la cohérence et la sécurité du site sans avoir à obtenir l’accord préalable du CLIENT.</li></ul><p id="671e8ef9-581e-41d6-842a-3f63c3ac25c5" class="">La maintenance n’inclut pas :</p><ul id="7bfb098a-e907-4f29-a300-2a403b0d5524" class="bulleted-list"><li>les modifications ou ajout de pages, articles, textes, images, vidéos, sons, etc… ;</li></ul><ul id="e196cf20-3e33-4563-ad37-133eb76eb1b4" class="bulleted-list"><li>l’optimisation de la banque d’images : le CLIENT est tenu de supprimer les médias en plusieurs exemplaires qu’il aura lui-même insérées et de vérifier qu’il a correctement nommé chaque média (sans accents) ;</li></ul><ul id="10611710-fca5-46d1-add5-6078becc6a65" class="bulleted-list"><li>la résolution de problèmes suite à une mauvaise manipulation du CLIENT ;</li></ul><ul id="5e0f139d-6476-4673-9175-34a1b691b9aa" class="bulleted-list"><li>la résolution de problèmes suite à l’ajout d’extensions par le CLIENT ;</li></ul><ul id="50964f1b-2b69-4795-aa23-fbca47a957bc" class="bulleted-list"><li>la résolution de problèmes de sécurité de type intrusions malveillante de tiers, vol et détournements éventuels de mots de passe, site hacké ou piraté,…</li></ul><h2 id="a9f4b0b8-61c9-4c35-85ee-a8d01e99b5e3" class=""><strong>13.2. Modalités d’intervention</strong></h2><p id="cc6b55ac-aaae-45c4-992b-8ecee8059cb5" class="">Lorsque le contrat de maintenance est souscrit par le CLIENT, le PRESTATAIRE ira visiter au minimum une (1) fois par mois l’espace d’administration de son site internet afin de procéder aux vérifications préventives. </p><p id="654903c3-05b4-40ae-a299-dd2dabdfdce8" class="">Les mises à jour incluses dans la maintenance se feront au moment le plus adéquat, jugé par le PRESTATAIRE et dans l’intérêt du site internet du CLIENT.</p><h2 id="85ac0f6c-6925-44ac-b5df-b330d9131a93" class=""><strong>13.3. Durée du contrat et reconduction</strong></h2><p id="c8881fda-e938-49fb-bcf0-372fd63bbaf1" class="">Le contrat de maintenance est conclu pour une durée de un (1) an et n’est pas reconductible automatiquement à l’échéance de celui-ci. A la fin du contrat, le PRESTATAIRE se réserve le droit de proposer un nouveau devis avec ses nouvelles tarifications ou de ne pas reconduire le contrat. Le CLIENT n’est nullement tenu de reconduire un contrat de maintenance avec le PRESTATAIRE.</p><p id="2ffd3f08-701e-4813-9783-83dab0f8744f" class="">Pour procéder à la reconduction du contrat, le PRESTATAIRE notifiera par courriel le CLIENT selon la date anniversaire du renouvellement et selon le calendrier suivant :</p><ul id="62df82e9-a437-4160-8faa-1f8663375ec0" class="bulleted-list"><li>1 rappel : J – 15 jours</li></ul><ul id="a87926bb-267d-499d-b267-f7f0363b1efa" class="bulleted-list"><li>2 rappel et fermeture de la maintenance : jour J</li></ul><ul id="125f3b86-a6f6-49e7-a0c0-345b3523881c" class="bulleted-list"><li>Arrêt de la maintenance : J + 15 jours</li></ul><p id="81deafed-2dcd-430f-927d-f9603ba9d8c1" class="">Cette notification sera faite par courriel uniquement et sera adressée au contact de facturation <em>(adresse de courriel à tenir à jour, sous la responsabilité du CLIENT)</em>.</p><p id="1dce1c4c-b5fa-4dde-bc7a-1f4fd69533f4" class="">Il appartient au CLIENT de solliciter le renouvellement avec un délai suffisant de sorte que le paiement soit effectivement reçu par le PRESTATAIRE avant expiration du contrat de maintenance précédent.</p><h2 id="9f20fce8-8dbb-45a7-bf24-5c7cdc47b1b0" class=""><strong>13.4. Résiliation du service de maintenance</strong></h2><p id="fa9eb6cc-6d4a-4524-992f-f2c3dae26f8e" class="">Le contrat de maintenance ne peut être résilié avant l’échéance du terme, à l’initiative de l’une des parties sans le consentement de l’autre partie, sauf en cas de force majeure. </p><p id="0bc4d280-a558-41e8-8c73-6315829c96b8" class="">En cas de consentement mutuel de résiliation de contrat, le CLIENT ne pourra prétendre au remboursement par le PRESTATAIRE des sommes déjà versées.</p><h3 id="69434947-f384-4ef0-a9b3-f71869fb46ec" class="">13.4.1. Défaut de paiement</h3><p id="35f1f7f7-0bb7-4b7e-9ed1-be1f5896edc4" class="">A défaut de l’entier paiement du prix du renouvellement fixé dans le tarif, le PRESTATAIRE ne pourra effectuer le renouvellement demandé par le CLIENT. Le CLIENT recevra un courriel de notification de fermeture de la maintenance à la date d’anniversaire de celle-ci. L’arrêt définitif de la maintenance interviendra à  J + 15 jours selon la date anniversaire du renouvellement et le CLIENT recevra un courriel pour l’informer de l’arrêt de la maintenance pour défaut de paiement.</p><p id="842f2a06-8c5d-4679-8c7d-cea381735e64" class="">Si le CLIENT souhaitait réactiver la maintenance après J + 15 jours, un supplément pour interruption de service sera appliqué. Le contrat de maintenance sera remis en service, une fois toutes les sommes perçues par le PRESTATAIRE <em>(prix du contrat de maintenance auquel s’ajoutera le supplément pour interruption de service)</em>.</p><h3 id="09d8ac5a-dadc-4985-9ee2-e4ca29fa88ec" class="">13.4.2. Force majeure</h3><p id="68357afa-bedd-43c2-b505-1e1f444157b9" class="">En cas de force majeure dans les conditions prévues à l’article 19 des présentes Conditions Générales de Vente, chaque partie peut résilier de plein droit et sans indemnité le contrat de maintenance.</p><h3 id="84108a63-07f0-4aed-9200-2253a41798d9" class="">13.4.3. Non-respect des obligations du CLIENT</h3><p id="f2da2ef0-8989-42d0-8203-c3c58a47d281" class="">Le non-respect par le CLIENT de ses responsabilités stipulées dans l’article 17 des présentes Conditions Générales de Vente, entraînera le droit pour le PRESTATAIRE d’interrompre sans délai et sans mise en demeure préalable les services du CLIENT et de résilier immédiatement et de plein droit le contrat de maintenance, sans préjudice du droit à tous dommages-intérêts auxquels le PRESTATAIRE pourrait prétendre. </p><p id="7d13dfdc-7a13-4b82-9da7-59d802f318ea" class="">Dans ces hypothèses, le CLIENT ne pourra prétendre au remboursement par le PRESTATAIRE des sommes déjà versées.</p><h3 id="5e085e24-3c20-4422-a74a-e274034ec858" class="">13.4.4. A l’initiative du PRESTATAIRE</h3><p id="10b3d09c-bbae-4a42-8a8b-57fad84e4406" class="">Le PRESTATAIRE pourra mettre fin au contrat arrivé à son terme par lettre recommandée avec demande d’avis de réception, sous réserve d’un préavis de deux (2) mois avant la date anniversaire, sans justification à donner et sans droit à indemnités. Le CLIENT ne pourra prétendre au remboursement des sommes déjà versées.</p><p id="8b0ef498-f74a-435c-9483-ca699b0b4b41" class="">Si le PRESTATAIRE résilie le contrat suite au non-respect des obligations du CLIENT et ayant entraîné préjudice pour le PRESTATAIRE, celui-ci se réserve le droit de poursuivre le CLIENT pour obtenir la réparation complète de ce préjudice et notamment le remboursement de dommages et intérêts, pénalités, frais, honoraires exposés par le PRESTATAIRE.</p><h3 id="599fb1f7-c7f9-4d02-9635-c276b290e947" class=""><strong>13.5. Mise à jour des données personnelles</strong></h3><p id="92a56e70-34de-4fd7-8f33-ce3282d166c1" class="">Le CLIENT s’engage à informer le PRESTATAIRE de toute modification concernant sa situation <em>(notamment changement d’adresse, électronique ou autre…)</em> au plus tard dans le mois de ce changement, sauf pour le changement de l’adresse de messagerie, dont la modification devra être transmise dans les 48 heures à compter de son utilisation.</p><h1 id="1b566b3d-a5dd-4d94-90e7-7fa6f5b6277f" class="">ARTICLE 14 – NON-SOUSCRIPTION AU SERVICE DE MAINTENANCE</h1><h2 id="611647ba-6f3e-424a-9ab9-8a5e1f8bae91" class=""><strong>14.1. Champ d’application</strong></h2><p id="ca715946-bb7f-4b40-a942-43be5a604522" class="">Si un contrat de maintenance n’est pas pris ou reconduit par le CLIENT, la responsabilité du PRESTATAIRE envers le site internet du CLIENT est totalement dégagée.</p><p id="7c664466-785c-4faa-9ab5-c091b20e1585" class="">Les mises à jour du CMS, du thème et de tout module installé sur le site internet deviennent à la charge du CLIENT. </p><p id="f2c74317-7bae-4685-bbbc-2a7b685f8f36" class="">Etant donné que le CLIENT devient le seul administrateur de son site internet et qu’il peut faire des erreurs, la stabilité du site internet n’est pas garantie dans le temps.</p><h2 id="711459c0-3285-49f6-a08a-34e58bfe6a5a" class=""><strong>14.2. Licences premium</strong></h2><p id="00e2fd25-01c4-46f9-a48a-00d788dc07ca" class="">Le CLIENT devra éventuellement acheter les licences premium du thème et des plugins utilisés pour effectuer lui-même leurs mises à jour d’une part et, pour d’autre part, assurer la compatibilité du thème utilisé avec les dernières versions de WordPress.</p><h2 id="9924dcdf-0a35-452e-ba31-6f5cd80e3190" class=""><strong>14.3. Mots de passe</strong></h2><p id="594e41e8-d3bc-4d20-b53c-e8e7e73a7972" class="">Une fois le contrat achevé et le site internet mis en ligne, et <strong>seulement dans le cas</strong> où un contrat de maintenance ne serait pas souscrit, il est recommandé au CLIENT de modifier les mots de passe qui donnent accès à son site. Le PRESTATAIRE décline toute responsabilité en cas de dommages subis si le CLIENT n’a pas changé ses codes d’accès.</p><h2 id="77fde40f-0d24-4266-a092-dd82b7438059" class=""><strong>14.4. Intervention suite à problème technique</strong></h2><p id="c0c15c4c-2665-4561-b413-40f266a2a1db" class="">Si aucun contrat de maintenance n’était souscrit par le CLIENT et en cas de problème technique ultérieur ou si le site devait être installé à nouveau sur le serveur d’hébergement, un nouveau devis sera établi par le PRESTATAIRE pour résoudre et réparer le problème constaté. </p><p id="b793c73f-b279-45c9-9f60-16cd8a471708" class="">Le CLIENT sera libre d’accepter ce devis ou de choisir un autre fournisseur.</p><h1 id="c7a63138-8c53-4cc6-97d0-e5d353f1739a" class=""><mark class="highlight-teal">ARTICLE 15 – GESTION DU SITE PAR LE CLIENT</mark></h1><h2 id="45fafdaf-c640-4634-96f5-37943dbae122" class=""><strong>15.1. Formation de base</strong></h2><p id="508e76d9-b6fe-49c3-88a5-19bf7c6c1307" class="">A la demande du CLIENT, le PRESTATAIRE est en mesure de lui apporter une formation de base à la gestion de son site internet. Cette formation doit permettre au CLIENT de rajouter sur son site des articles,  des pages et/ou d’effectuer des modifications de textes, ajout/suppression de photos, etc… </p><p id="3982827e-8fef-4b02-91a9-6f458f8c8a8a" class="">En aucun cas, cette formation ne prétend apporter une formation complète à la création et à la gestion de site internet sous WordPress ou aux langages de programmation.</p><p id="e54ddc5e-a1c7-4038-855e-d9a92de695b5" class="">Toute formation de base prévue dans le devis initial devra être effectuée par le CLIENT dans un délai de trois (3) mois après la livraison du site internet. </p><p id="835e280d-bf95-4ae8-a869-210d24175023" class="">A la demande du CLIENT, le PRESTATAIRE peut lui proposer par la suite d’autres formations complémentaires sur devis.</p><h2 id="3804499e-25d3-4066-a8a1-d52c0d41a2c6" class=""><strong>15.2. Limites de responsabilité</strong></h2><p id="d6dfa572-c716-434e-85ea-cca7035f0207" class="">Le PRESTATAIRE n’a aucune obligation de contrôle sur les modifications apportées sur le site internet par le CLIENT ou par toute autre personne ne travaillant pas pour le PRESTATAIRE.</p><p id="dcb6e69a-d52f-48d2-835e-ebf63e5d5c2c" class="">Le CLIENT, ou la personne désignée par lui, administrant le site internet par l’ajout de pages, d’articles et de médias est tenu de tenir en bon ordre la bibliothèque de médias. </p><p id="38a4df14-9ae1-438d-b322-d1f381667ed6" class="">Le CLIENT doit notamment supprimer les images en plusieurs exemplaires ou inutilisées. </p><p id="ec03b9ef-430f-4cbf-a6dc-d37ea15d0fde" class="">Afin de pouvoir garantir une bonne stabilité dans les sauvegardes du site internet, le CLIENT prendra notamment garde à ne pas nommer les images avec des accents. Le CLIENT a une obligation d’auto-contrôle sur les modifications qu’il apporte sur le site internet. Le PRESTATAIRE ne sera en aucun cas responsable de la perte de données suite à une négligence du CLIENT.</p><p id="56e65ba6-e4e5-4a7c-b102-dcc811feab57" class="">En cas de dysfonctionnement du site internet dû à une mauvaise manipulation de la part du CLIENT, le PRESTATAIRE facturera d’office au CLIENT les heures de maintenance qui auront été nécessaires au rétablissement du bon fonctionnement du site.</p><p id="1d22125f-88c9-46ac-abb6-122d9fc7b240" class="">Le PRESTATAIRE décline toute responsabilité quant au bon maintien du site internet si le CLIENT réalise lui-même les mises à jour de WordPress, du thème et/ou des plugins utilisés. Si le site internet venait à subir quelque dommage suite à l’intervention du CLIENT, le PRESTATAIRE émettra une facture correspondante aux travaux nécessaires pour le bon rétablissement du site internet.</p><p id="d2adbc44-8fe3-4371-a921-f472d4fbcd2b" class="">Le CLIENT qui interviendra sur le code source le fera à ses risques et périls et le PRESTATAIRE ne pourra être tenu pour responsable du dysfonctionnement du site.</p><p id="0e5748fa-68f2-4e18-89a0-21650bd0e53d" class="">Le PRESTATAIRE décline toute responsabilité dans le cas où les interventions de maintenance devaient s’avérer impossibles à effectuer du fait de la gravité des dommages subits suite aux modifications faites par le CLIENT sur le site internet.</p><h1 id="76c597d8-b171-410a-a914-265bdebc2996" class=""><mark class="highlight-teal">ARTICLE 16 – TARIFS ET PAIEMENT</mark></h1><h2 id="86cda13e-dec1-49c3-a7e9-9aa500a4e498" class=""><strong>16.1. Auto-entrepreneur et TVA</strong></h2><p id="1dfbd309-9c1c-4679-ba3b-09fbe0ff724e" class="">Déclarés sous le régime de l’auto-entrepreneur, les services du PRESTATAIRE ne sont pas soumis à la TVA <em>(TVA non applicable, article 293B du CGI)</em>. Les devis et factures émis par le PRESTATAIRE sont par conséquent nets de taxes et rien n’est à ajouter à leur montant.</p><h2 id="6ca785e0-6c5c-4d17-a223-41876548ac1e" class=""><strong>16.2. Champ d’application</strong></h2><p id="c34452f8-448d-47a6-9e9b-56c20871a9f9" class="">En contrepartie des prestations mentionnées dans le devis accepté par le CLIENT, celui-ci s’engage à payer le PRESTATAIRE du montant des tarifs spécifiés sur le devis. Le CLIENT est seul responsable du paiement de l’ensemble des sommes dues au titre du contrat de prestations de services du PRESTATAIRE.</p><p id="f1d31785-f210-4b4c-af8b-d082e60e794b" class="">Les prix des prestations peuvent évoluer à tout moment sauf pour les devis acceptés et retournés au PRESTATAIRE. Les tarifs servant de base de facturation sont des prix unitaires.</p><p id="69200c9a-d0ed-4b0b-9d27-1eee8e1d14f5" class="">Pour les contrats à échéance annuelle de type maintenance, le CLIENT est informé du nouveau tarif dans le 1er courriel de notification du renouvellement, envoyé trente (30) jours avant la date anniversaire. Le CLIENT sera libre de renouveler ou non le contrat.</p><h2 id="f3bc5012-68aa-454a-926a-145230971781" class=""><strong>16.3. Modes de règlement</strong></h2><p id="4f4617e4-3c45-4b40-bedf-2f76e17152e3" class="">Le CLIENT professionnel ou non professionnel doit régler le prix selon les spécifications prévues sur le devis, soit par virement bancaire sur le compte du PRESTATAIRE.</p><p id="409753cd-2260-4230-a775-b23007e11a96" class="">Toute contestation ou réserve relative à une facture devra être notifiée au PRESTATAIRE au plus tard dans les cinq (5) jours de sa réception. A défaut, la facture sera considérée comme définitivement acceptée par le CLIENT et la créance correspondante comme incontestable.</p><h2 id="9eba6417-60db-4a5b-b823-18bb15a1f06e" class=""><strong>16.4. Modalités de paiement</strong></h2><p id="8bd58354-2beb-4bff-9f44-a8a047b1b21a" class="">Le devis précise les modalités de paiement qui sont les suivantes :</p><h3 id="36ab47bd-1c8a-4ca8-8712-85cf3b3f6e01" class="">16.4.1. Réalisation de site internet ou refonte de site</h3><p id="bd94bdc5-b35a-4134-b59f-367db9dd1455" class="">Lors de l’acception des services, le CLIENT complètera et signera le devis qui fera office de Bon de commande. Les modalités de paiement sont les suivantes :</p><ul id="ac782c66-4c61-4090-bac8-adacf0caa029" class="bulleted-list"><li>Acompte de 50% à la commande</li></ul><ul id="3603f466-b508-4e94-936e-a97b423473a8" class="bulleted-list"><li>Le solde à la mise en ligne définitive du site internet, à régler sous dix (30) jours.</li></ul><h3 id="28fa7960-1b9e-4287-ac13-edb3f2e5e644" class="">16.4.2. Maintenance</h3><ul id="d824343f-a114-4ac3-9874-d12a4a617c8b" class="bulleted-list"><li>Règlement avant expiration du contrat de maintenance précédent ;</li></ul><ul id="552782b1-8a03-4daa-89c5-09920299f912" class="bulleted-list"><li>Il appartient au CLIENT de solliciter le renouvellement de la maintenance de son site internet avec un délai suffisant de sorte que le paiement soit effectivement reçu par le PRESTATAIRE <strong>avant expiration de la maintenance précédente</strong>. Tout incident et/ou retard de paiement à l’échéance entraînera suspension de services suite à aux rappels du PRESTATAIRE.</li></ul><h3 id="a87bc965-4f6b-44e9-8a00-67bdd680af6c" class="">16.4.3. Prestations annexes, devis de « mise à jour »</h3><ul id="2c6fa80d-9072-4550-971e-d98f236e4a37" class="bulleted-list"><li>Règlement à la commande, avant la réalisation du devis correspondant aux travaux.</li></ul><h2 id="06d3d349-e548-4f2e-b9f0-bc95b7e3c404" class=""><strong>16.5. Transfert de propriété</strong></h2><p id="249391e4-d9f7-49be-a8e0-f452cab93a94" class="">Les travaux réalisés restent l’entière propriété du PRESTATAIRE jusqu’au paiement intégral de la facture correspondante. Le transfert de propriété du PRESTATAIRE vers le CLIENT s’effectue à compter du règlement du solde restant dû par le CLIENT.</p><h2 id="da023e20-39e6-4923-871b-3dad0edd09a0" class=""><strong>16.6. Retard de paiement</strong></h2><p id="cab74423-35be-4518-82fa-ef9a9056d3d8" class="">Tout retard de paiement au-delà de dix (30) jours à compter de la date d’émission de la facture entraînera de plein droit, conformément à la loi, des pénalités de retard égales à 2,7 % du montant TTC de la facture.</p><p id="6081cb62-cbae-4d73-a529-79e792668968" class="">Le point de départ des pénalités de retard est le lendemain de l’échéance.</p><p id="fe9ce47b-2f80-47dd-8942-39e7559c1e1a" class="">Le point d’arrivée du calcul des pénalités est constitué par la date du règlement de la facture. Le CLIENT doit procéder au règlement des pénalités de retard en même temps que le règlement de sa facture. Les pénalités de retard sont dues et sont exigibles dès lors que le CLIENT n’a pas procédé au règlement de sa facture à l’échéance. Le PRESTATAIRE n’a pas à informer le CLIENT de l’application et de l’exigibilité des pénalités de retard, celles-ci s’appliquent de plein droit.</p><p id="d856bd86-6f70-4f97-8e07-b24695a01b3d" class="">Tout CLIENT professionnel en situation de retard de paiement est redevable à l’égard du PRESTATAIRE d’une indemnité forfaitaire pour frais de recouvrement de 40 euros en plus des pénalités de retard. Dans l’hypothèse où les frais de recouvrement exposés seraient supérieurs au montant de la pénalité forfaitaire, le PRESTATAIRE pourra demander une indemnisation complémentaire sur justification.</p><p id="e94c9773-4e8a-4ff7-a7dd-df79dd6c1060" class="">Le PRESTATAIRE se réserve de plein droit la faculté de suspendre les travaux en cours jusqu’à règlement complet de la facture impayée sans que cette inexécution lui soit imputable.</p><h1 id="5e1a7542-52e8-46af-88f5-cd8f81e7462d" class=""><mark class="highlight-teal">ARTICLE 17 – RESPONSABILITÉ</mark></h1><h2 id="bd645cf4-1dc5-4e6c-a322-839432d93240" class=""><strong>17.1. Champ d’application</strong></h2><p id="0f993fc7-8d16-4859-9b1f-d7fe74b3125b" class="">Seul le CLIENT est dit « responsable » de son site internet et ce dès la mise en ligne. La responsabilité du PRESTATAIRE sera en conséquence entièrement dégagée à partir de la livraison du site internet.</p><p id="c6591cfd-f8fc-493e-980b-df115ba99a7d" class="">Le CLIENT est propriétaire du site internet et est libre de la gestion du contenu et de l’administration. Le CLIENT déclare accepter les caractéristiques et les limites de l’Internet et reconnaît en particulier les points suivants : les données circulant sur l’Internet ne sont pas protégées, notamment contre des détournements éventuels.</p><p id="30d31ea2-6b1c-4fe5-9307-97cdb8506f28" class="">Le PRESTATAIRE ne pourra en aucun cas être tenu pour responsable de problèmes liés à l’hébergement, au référencement, à la fiabilité de la transmission de données, aux temps d’accès, à la rapidité de chargement du site internet.</p><p id="86700693-e47b-4603-be4d-8c443ff6c99e" class="">Le PRESTATAIRE exécutera ses prestations en respectant les règles de l’art en usage dans la profession. Il est expressément spécifié que le PRESTATAIRE n’est pas tenu par une obligation de résultat mais par un engagement de moyens.</p><h2 id="aae577cb-b1cc-4c4a-b5b6-65d6a5fbb409" class=""><strong>17.2. Contenu du site internet</strong></h2><p id="97c5a85f-ebd3-42ea-81ec-c303c24ff4d1" class="">Le CLIENT est seul responsable des propos et des contenus de son site internet, de l’ensemble des informations communiquées, de leur exploitation et de leur mise à jour, ainsi que de tous fichiers, notamment fichiers d’adresses. </p><p id="481f4f69-888e-4e2c-a8d9-fbb7d5837f09" class="">En conséquence, le PRESTATAIRE  ne serait être tenu pour responsable du contenu des informations transmises, diffusées ou collectées, de leur exploitation et de leur mise à jour, ainsi que de tous fichiers, notamment fichiers d’adresses et ce, à quelque titre que ce soit.</p><p id="bdf545aa-8652-466b-bdc7-4c65afb534c7" class="">Avant de transmettre un élément graphique ou textuel au PRESTATAIRE pour la bonne réalisation du contrat, le CLIENT doit s’assurer qu’il dispose de tous les droits de reproduction et d’utilisation de cet élément. Seule la responsabilité du CLIENT est engagée à ce titre.</p><p id="bfa59cf9-1a03-4922-827d-1332930c0998" class="">Le CLIENT est civilement et pénalement responsable de la moralité, du respect des lois et règlements notamment en matière de protection des mineurs et du respect de la personne humaine ainsi que de ses données personnelles et des droits des tiers notamment en matière de propriété intellectuelle ainsi que de l’ensemble des données communiquées. </p><p id="e54c4255-3379-488c-be7e-d3a3ed9f0590" class="">Le CLIENT s’engage à respecter les principes universels d’usage de l’Internet.</p><p id="139c3a0a-342c-46f8-a618-98c2b0251f3e" class="">Le CLIENT s’engage à ne pas proposer de pages, textes, images, sons, vidéos ou autres animations non conformes à la législation française. </p><p id="4bf4eece-af1b-4a26-99d8-96434a1eb21a" class="">Le CLIENT s’engage à ne pas utiliser de lien hypertexte pointant vers des sites ou des pages allant à l’encontre des lois françaises ou internationales ou pouvant nuire à l’image du PRESTATAIRE.</p><h2 id="3b6cb04b-824a-46e9-a4e9-284f6ec6f3a0" class=""><strong>17.3. Légalité</strong></h2><p id="a79b3bb7-b268-4215-a5b2-fbb300c569c2" class="">Le CLIENT ne doit pas, de quelque manière que ce soit, par exemple par des bandeaux publicitaires, porter atteinte à la loi, à l’ordre public, aux bonnes mœurs et/ou aux droits des tiers <em>(droit des marques, droit d’auteur, protection des mineurs, protection des bases de données, etc…)</em>. </p><p id="e9549ac6-48d6-450f-a68c-2bff4b215a86" class="">Le CLIENT s’engage notamment à ne pas proposer de contenus à caractère pornographique, ni proposer ou laisser proposer des prestations commerciales qui ont un caractère pornographique et/ou érotique ou manifestement illicite ou attentatoire à l’ordre public <em>(violence, incitation à la haine raciale, fourniture de produits ou services strictement prohibés sur le territoire, etc…)</em>.</p><p id="dafb3066-5dd8-4edc-8e2b-13038e1263ce" class="">Le PRESTATAIRE décline toute responsabilité légale et morale si le CLIENT a trompé le PRESTATAIRE quant au futur contenu du site contraire aux bonnes mœurs ou à contenu illégal, que ce soit en cours de mission ou après. </p><p id="633e645b-0345-4663-b719-6125f2ba60f6" class="">Si un CLIENT commande un tel service à l’insu du PRESTATAIRE, le PRESTATAIRE se réserve le droit de divulguer toute information à la police et à la Justice. Le CLIENT sera tenu au versement immédiat d’une pénalité contractuelle de 3800 (trois mille huit cents) EUR par violation constatée, ce versement n’étant pas exclusif d’une demande judiciaire de dommages et intérêts. </p><p id="8cd43171-cacd-4241-98be-c96b4b71715e" class="">Il est précisé que le CLIENT devra payer autant de fois la pénalité que le nombre de violations éventuellement constatées. Le CLIENT sera tenu d’enlever sans délai toute référence au PRESTATAIRE sur son site internet.</p><h2 id="049e2f22-5d88-484e-b42a-1dc05de8ff9a" class=""><strong>17.4. Préjudices indirects</strong></h2><p id="e56846b2-d4eb-4ad7-93d1-ba9e1525c201" class="">En aucun cas, la responsabilité du PRESTATAIRE ne pourrait être engagée pour les préjudices indirects, tels que les préjudices financiers ou commerciaux, perte de commandes, perte de données, manque à gagner, atteinte à l’image de marque, perte de bénéfices ou de clients (par exemple, divulgation inopportune d’informations confidentielles les concernant par suite de défectuosité ou de piratage du système).</p><p id="b48ef3db-17a7-4d23-8f8c-cfe84180f30d" class="">Le PRESTATAIRE ne saurait-être tenu pour responsable d’éventuelles pertes d’exploitation résultant d’une indisponibilité temporaire ou permanente, partielle ou totale d’une boutique de commerce électronique.</p><h2 id="d4ab67f6-f851-4af4-baf7-bf166cc0c623" class=""><strong>17.5. Informations légales</strong></h2><p id="78b835e4-b707-4324-8796-24678b530d55" class="">La responsabilité du PRESTATAIRE ne saurait en aucun cas être engagée en cas de non respect par le CLIENT des autorisations légales et réglementaires, notamment en ce qui concerne le traitement des données.</p><p id="e228f00a-63f0-4225-90c8-0edcfb4bebcd" class="">La rédaction de « mentions légales », de « conditions d’utilisation », de « conditions générales de ventes » (…), au même titre que tout contenu ne rentre pas dans le cadre du contrat. </p><p id="c90c7cf9-1a93-4f6c-98be-3288c34b0bbf" class="">En aucun cas, la responsabilité du PRESTATAIRE ne pourra être engagée pour défaillance ou manquement de mise en ligne de contenu à caractère contractuel par le CLIENT.</p><h2 id="5c2d8a98-2560-4236-9afe-aa5757b83726" class=""><strong>17.6. Protection des données</strong></h2><p id="60d690f3-beb4-4061-84f8-11e8c08b8e5c" class="">Le PRESTATAIRE décline toute responsabilité en cas d’intrusions malveillantes de tiers sur le site internet et/ou dans les boîtes aux lettres électroniques du CLIENT ; de vol et détournements éventuels de mots de passe, codes confidentiels, et plus généralement de toute information à caractère sensible pour le CLIENT ; de contamination par virus des données et/ou logiciels du CLIENT <em>(il est rappelé que la protection de ceux-ci incombe au CLIENT) </em>; de dommages que pourraient subir les équipements du CLIENT, le PRESTATAIRE n’ayant aucune intervention à faire sur ceux-ci.</p><h2 id="c8adadb2-18d2-4873-9fb9-bc127fd0acd3" class=""><strong>17.7. Interruption pour maintenance</strong></h2><p id="3743a4b0-50d6-47de-addc-e229a323dfea" class="">Dans le cadre d’un service de maintenance, le PRESTATAIRE se réserve le droit d’interrompre temporairement l’accessibilité au site internet sans droit à indemnités. </p><p id="0cc585c9-80de-461a-aa58-9d05a734a9fd" class="">Cependant, le PRESTATAIRE s’engage à mettre en œuvre tous les moyens dont il dispose pour minimiser ce type d’interruption. </p><p id="92c762b5-bba3-4742-b1e0-8384a1f97206" class="">Le PRESTATAIRE est non responsable de la perte de revenus due à une interruption ou une défaillance de service.</p><h2 id="e80659af-cf54-49b6-992e-f493fed2db4a" class=""><strong>17.8. Limites de responsabilité : thème et plugins</strong></h2><h3 id="98b8de6f-0427-4b3f-90d9-e74f8f47fcf4" class="">17.8.1. Utilisation de thème premium</h3><p id="c170ed36-e8b1-454c-b688-1677e111b87f" class="">Le PRESTATAIRE décline toute responsabilité en cas d’utilisation d’un thème premium ou gratuit qui ne serait plus développé par la suite et qui serait devenu incompatible avec la dernière version de WordPress. </p><p id="1d201f0a-519f-4e46-80a2-a367a86e5fea" class="">Dans ce cas précis, la maintenance du thème ne pourra plus se faire par le PRESTATAIRE, sans droit à indemnités. En tout état de cause, le PRESTATAIRE pourra proposer au CLIENT un nouveau devis pour l’installation d’un autre thème.</p><h3 id="13c795fc-bd55-4f03-8c3f-9a58b8be85d5" class="">17.8.2. Dysfonctionnement</h3><p id="d707f32c-d008-4e2a-99e4-410adc55adfd" class="">Les réalisations du PRESTATAIRE utilisent des logiciels développés par des tiers tel que WordPress, des plugins, un thème gratuit ou premium. </p><p id="d030f579-4405-497c-8833-b8d7c07f9f28" class="">En aucun cas, le PRESTATAIRE ne peut être tenu pour responsable des anomalies, bugs ou dysfonctionnement des ces outils qui demeurent sous la responsabilité de leurs auteurs, pas plus que des services éventuellement associés<em> (réseaux sociaux, etc…)</em>. </p><p id="a39088f0-c043-4968-92da-f7fe8d90e5b0" class="">La mise à jour de WordPress et des modules sont sous la responsabilité du CLIENT, sauf si celui-ci a souscrit un contrat de maintenance.</p><h3 id="e2305e29-b947-4bd6-a4b0-b80f935f47cc" class="">17.8.3. Frais </h3><p id="7d5973ca-7e93-40ee-b11a-7862928d06a1" class="">Le PRESTATAIRE prend à sa charge les premiers frais inhérents au thème et aux plugins premium sous licence payante. </p><p id="1aabff2e-2674-4c25-a1dd-9b2cb83bb994" class="">Le renouvellement de ces licences est normalement inclus dans le cadre d’un contrat de maintenance annuel, exception faite de modifications ultérieures des conditions de vente du fournisseur du thème ou du plugin, engendrant une augmentation excessive des frais d’abonnement annuel. </p><p id="d915c78b-477d-4bba-8b80-0a18ed658390" class="">Dans ces conditions, le PRESTATAIRE ne renouvellera pas la licence concernée et ne pourra être tenu pour responsable. </p><p id="3560b248-9b2c-4bd6-96bb-033777787339" class="">Le CLIENT, prévenu par le PRESTATAIRE des modifications de vente du fournisseur, sera seul responsable de renouveler à ses frais la ou les licences. En tout état de cause, le PRESTATAIRE pourra proposer au CLIENT un nouveau devis pour l’installation d’un autre thème ou plugin.</p><h2 id="b3fdd639-0eb2-4205-8499-b519d83a1633" class=""><strong>17.9. Limites de responsabilité : Internet et FAI</strong></h2><p id="3fa17e4f-79ae-43b3-a79a-8666128b1866" class="">Le PRESTATAIRE ne peut être tenu responsable de la perte de données sur les serveurs d’hébergement. Cependant le PRESTATAIRE s’engage à tout mettre en œuvre pour sécuriser les données du CLIENT dans la limite de son champ d’action. Il s’agit ici d’une obligation de moyens et non de résultats.</p><p id="7be5e5bb-8bc8-4985-801c-72c6e6f18abc" class="">Le PRESTATAIRE ne serait être tenu pour responsable du non-respect total ou partiel d’une obligation du CLIENT et/ou d’une défaillance des opérateurs des réseaux de transport vers le monde Internet et en particulier de son ou ses fournisseurs d’accès. </p><p id="02ee9374-c3be-429f-b903-f6a2f588bbdf" class="">A ce titre, le PRESTATAIRE informe le CLIENT que ses prestations sont indépendantes d’autres opérateurs techniques et que sa responsabilité ne peut être engagée par leur défaillance.</p><h2 id="591b64bf-81d1-40ad-9294-6d721e7ccba3" class=""><strong>17.10. Dommages et intérêts</strong></h2><p id="cf24b308-a491-41aa-b585-11db39ddc431" class="">Le CLIENT s’engage à prendre à sa charge toute réclamation et/ou procédure quelle qu’en soit la forme, l’objet ou la nature qui serait formée contre le PRESTATAIRE et qui se rattacherait aux obligations mises à la charge du CLIENT au titre du présent contrat.</p><p id="1aa2cafb-d9df-4ced-9bb5-40109644b8b4" class="">En tout état de cause, le montant des dommages-intérêts qui pourraient être mis à la charge du PRESTATAIRE, si sa responsabilité était engagée, sera limité au montant des sommes effectivement versées par le CLIENT au PRESTATAIRE pour la période considérée ou facturée au CLIENT par le PRESTATAIRE ou au montant des sommes correspondant au prix de la prestation, pour la part du service pour laquelle la responsabilité du PRESTATAIRE a été retenue. </p><p id="0db3153c-3702-4ebf-aa88-2ba7c1a177ac" class="">Sera pris en considération le montant le plus faible de ces sommes.</p><h1 id="d8ef5b26-9103-4fb6-bdaa-12053f09f30a" class=""><mark class="highlight-teal">ARTICLE 18 – INCAPACITE DE TRAVAIL</mark></h1><p id="55103642-ccce-456d-a748-29d13a18005f" class="">Le PRESTATAIRE se doit d’avertir le CLIENT dès le premier jour ouvrable de son incapacité.</p><p id="6e2e1875-6b52-413d-9843-a0194b627afe" class="">En cas d’incapacité de travail, par suite de maladie ou d’accident, le PRESTATAIRE se réserve le droit rompre les contrats en cours, et/ou modifier le calendrier en cours sans qu’il ne puisse être exigé par le CLIENT le versement d’indemnités.</p><h1 id="59f7d844-71d3-4418-9d47-e7fb02064a2e" class=""><mark class="highlight-teal">ARTICLE 19 – FORCE MAJEURE</mark></h1><h2 id="ccc826de-316e-43f7-917c-2e137318d40c" class=""><strong>19.1. Champ d’application</strong></h2><p id="7039da41-0760-4779-a543-9ae0f9b4c2e5" class="">Toutes circonstances indépendantes de la volonté des parties, empêchant l’exécution dans des conditions normales de leurs obligations, sont considérées comme des causes d’exonération des obligations des parties et entraînent leur suspension.</p><p id="f647da82-c42a-4663-b586-a9a63a4b4c91" class="">La partie qui invoque les circonstances visées ci-dessus doit avertir immédiatement l’autre partie de leur survenance, ainsi que de leur disparition.</p><h2 id="fbedaee5-a23f-4568-a9df-066903fc2e3b" class=""><strong>19.2. Cas de force majeure et responsabilités</strong></h2><p id="ecc06247-b366-452b-a459-4674ea2974a7" class="">Aucune des deux parties ne sera tenue pour responsable vis-à-vis de l’autre de la non-exécution ou des retards dans l’exécution d’une obligation du contrat qui seraient dus au fait de l’autre partie consécutivement à la survenance d’un cas de force majeure habituellement reconnu par la jurisprudence et les tribunaux français.</p><p id="e2df3594-ff41-49c7-80f2-8ca978de4924" class="">En aucun cas, la responsabilité du PRESTATAIRE ne pourra être recherchée en cas de force majeure habituellement reconnu par la jurisprudence et les tribunaux français, évènement ou incident indépendant de la volonté du PRESTATAIRE.</p><p id="f3297fee-f831-4dcc-b6a0-950d5504278d" class="">Constitue un cas de force majeure tout événement hors de contrôle, inévitable et indépendant de la volonté des parties dont le blocage des moyens de transports ou d’approvisionnements, tremblements de terre, incendies, tempêtes, inondations, foudre, panne d’électricité, l’arrêt des réseaux de télécommunication ou difficultés propres aux réseaux de télécommunication externes au CLIENT…</p><h1 id="cf681ac1-af7a-4607-aabf-a4c2f0377ea8" class=""><mark class="highlight-teal">ARTICLE 20 – CONFIDENTIALITE</mark></h1><p id="b5ec77de-91dc-4479-88b5-9d7364e04975" class="">Chacune des parties s’engage à conserver confidentiels, pendant la durée du contrat et après son expiration, l’ensemble des informations, documents, savoir-faire, base de données, mots de passe et codes confidentiels en provenance de l’autre partie dont elle pourrait avoir eu connaissance à l’occasion de l’exécution du contrat, et ne devra les divulguer à quelques tiers que ce soit, ni les utiliser en dehors des besoins du contrat.</p><h1 id="dceac277-e8e4-43b7-af0d-1d5a2dd2e5a5" class=""><mark class="highlight-teal">ARTICLE 21 – PROPRIÉTÉ INTELLECTUELLE</mark></h1><p id="a4b0bab4-307b-4048-a669-4e22a708b9dc" class="">La propriété intellectuelle des créations réalisées par le PRESTATAIRE est transférée au CLIENT dès réception et encaissement du paiement effectif et intégral de la prestation.</p><h1 id="60b800dc-80b2-4c82-8b4b-73c5d0f14451" class=""><mark class="highlight-teal">ARTICLE 22 – DROIT APPLICABLE ET ATTRIBUTION DE JURIDICTION</mark></h1><p id="2a5c2ef0-1a8e-4dd8-8daf-cae0f6319a66" class="">La loi française est seule applicable aux présentes Conditions Générales de Vente. </p><p id="e0529ff3-5c56-477a-a641-e00238934efc" class="">En cas de litige survenant à l’occasion du contrat, tout différent lié à son interprétation, son exécution ou sa validité, et éventuellement après une tentative de recherche d’une solution amiable, sera soumis à la compétence exclusive du Tribunal de Commerce de MÂCON (71).</p></div></article></body></html>
